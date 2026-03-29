@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Mekuri Realm</title>
+  <meta name="description" content="Privacy Policy for Mekuri Realm.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <nav class="nav">
+      <a href="index.html"><span class="ch">&lt;</span> cd ../mekuri</a>
+    </nav>
+
+    <div class="page-header">
+      <div class="prompt" style="margin-bottom:8px;"><span>~/mekuri/</span>privacy</div>
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="page-sub">Mekuri Realm — Collectible Card Game</p>
+    </div>
+
+    <div class="section">
+      <div class="prose">
+        <p class="updated">Last updated: March 2026</p>
+
+        <h2>Overview</h2>
+        <p>
+          Mekuri Realm ("the App") is developed by Lars Waldow. This
+          privacy policy explains how data is handled when you use the App.
+        </p>
+        <p>
+          The short version: Campaign and Sandbox modes work entirely on your
+          device — no data leaves it. The optional PvP mode transmits game data
+          to a relay server for the duration of a match only; no personal data is
+          stored beyond the match session.
+        </p>
+
+        <h2>Data Collection</h2>
+        <p>
+          The App does <strong>not</strong> collect personal information. Specifically:
+        </p>
+        <ul>
+          <li>No account creation or sign-in is required.</li>
+          <li>No personal data (email, location, etc.) is collected.</li>
+          <li>No analytics or tracking tools are used.</li>
+        </ul>
+        <p>
+          The optional <strong>PvP mode</strong> transmits the following data to
+          a relay server in order to connect two players:
+        </p>
+        <ul>
+          <li>A randomly generated device identifier (UUID) that is not linked to your identity.</li>
+          <li>Your chosen in-game display name, rank, and avatar — as shown to your opponent during the match.</li>
+          <li>Your selected deck (card IDs, foil status, experience level) — required to play the match.</li>
+          <li>Your moves during the match (card placed, grid position).</li>
+        </ul>
+        <p>
+          This data is relayed directly to your opponent's device and is
+          <strong>not stored</strong> after the match ends. The server discards
+          all session data once both players disconnect.
+        </p>
+
+        <h2>Local Storage</h2>
+        <p>
+          The App stores your game progress (card collection, level progress,
+          statistics, deck configurations, and settings) locally on your device
+          using the browser's localStorage API. This data never leaves your device
+          and is included in your platform's standard backup mechanism (iCloud on
+          iOS, Google Auto-Backup on Android). PvP match results are also stored
+          locally only and are never uploaded.
+        </p>
+
+        <h2>Third-Party Services</h2>
+        <p>
+          The PvP mode uses <strong>Cloudflare Workers</strong> as a relay
+          infrastructure to connect two players. Cloudflare acts as a message
+          relay only — it does not process, analyse, or store game data beyond
+          the active WebSocket session. Cloudflare's own privacy policy applies
+          to network-level data (e.g. IP addresses) as part of their standard
+          infrastructure operation.
+        </p>
+        <p>
+          No advertising SDKs, analytics platforms, or other external services
+          are used. Future features (such as leaderboards via Game Center or
+          Google Play Games) will be described in an updated version of this
+          policy before they take effect.
+        </p>
+
+        <h2>Children's Privacy</h2>
+        <p>
+          The App does not knowingly collect personal data from children or any
+          other users. The PvP mode transmits only in-game identifiers and game
+          state; no age-specific data is collected.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+          This privacy policy may be updated to reflect changes in the App's
+          functionality. The "Last updated" date at the top of this page will
+          be revised accordingly.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          If you have questions about this privacy policy, you can reach me at
+          the contact information provided on the <a href="../legal.html">legal page</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2026 <a href="../index.html">Babian</a> · <a href="../legal.html">legal</a>
+    </div>
+
+  </div>
+  <script>(function(){var t=localStorage.getItem('theme'),c={cyan:'#4af',green:'#33d17a',amber:'#ffb000'};if(t&&c[t])document.documentElement.style.setProperty('--t-accent',c[t]);})()</script>
+</body>
+</html>
